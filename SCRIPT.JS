@@ -24,7 +24,7 @@ $(document).ready(function() {
             return parseInt(pizzaNumber);
           }
       
-          
+          var userInput = new Order(flavor(), size(), crust(), topping(), number());
           function Order(flavor, size, crust, topping, quantity) {
             this.newFlavor = flavor;
             this.newSize = size;
