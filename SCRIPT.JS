@@ -32,4 +32,26 @@ $(document).ready(function() {
             this.newTopping = topping;
             this.newQuantity = quantity;
           }
+          var totalCost =
+          (userInput.newSize +
+            userInput.newCrust +
+            userInput.newTopping +
+            userInput.newFlavor) *
+          userInput.newQuantity;
+    
+        
+        alert("Your charges for Pizza" + totalCost);
+        prompt("enter your email address");
+        prompt("enter your phone number");
+        prompt("enter your location");
+        alert("Your pizza will be delivered");
+    
+        
+        $("#text-center").reset();
+    
+        event.preventDefault();
+      });
+    });
+    
+    
       
