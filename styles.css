@@ -1,11 +1,15 @@
-
-.heading{
-    font-size: large;
-    font-style: italic;
-    color: orangered;
+.home{
+    background-image: url("images/hawaiian.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 350px;
 }
-
-
+#about{
+    text-align: center;
+}
+p{
+    color:chocolate;
+}
 h2{
     font-family: 'Architects Daughter', cursive;
     color: coral;
@@ -40,7 +44,7 @@ li a:hover{
     box-shadow: 5px 5px 10px rgb(218, 160, 226);
     position: relative;
 }
-/* the landing page */
+
 h1{
     font-family: 'Architects Daughter', cursive;
     font-size: 70px;
@@ -48,19 +52,8 @@ h1{
     color: chocolate;
     text-shadow: 3px 3px 5px black;
 }
-.home{
-    background-image: url("https://bit.ly/2tgdS1x");
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 350px;
-}
-/* about pizza corner */
-#about{
-    text-align: center;
-}
-p{
-    color:chocolate;
-}
+
+
 
 #img1{
     margin-right: 3%; 
@@ -202,3 +195,4 @@ button{
 button:hover{
     color: rgb(73, 95, 69);
 }
+

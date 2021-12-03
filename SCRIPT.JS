@@ -1,11 +1,9 @@
 $(document).ready(function() {
     
-      $("#text-center").submit(function(event) {
+      $("#text-center").submit(function(event) 
         
-        function flavor() {
-          var pizzaFlavour = document.getElementById("flavor").value;
-          return parseInt(pizzaFlavour);
-        }
+        
+        {
         function size() {
           var pizzaSize = document.getElementById("size").value;
           return parseInt(pizzaSize);
@@ -24,9 +22,9 @@ $(document).ready(function() {
             return parseInt(pizzaNumber);
           }
       
-          var userInput = new Order(flavor(), size(), crust(), topping(), number());
-          function Order(flavor, size, crust, topping, quantity) {
-            this.newFlavor = flavor;
+          var userInput = new Order( size(), crust(), topping(), number());
+          function Order( size, crust, topping, quantity) {
+           
             this.newSize = size;
             this.newCrust = crust;
             this.newTopping = topping;
@@ -35,8 +33,8 @@ $(document).ready(function() {
           var totalCost =
           (userInput.newSize +
             userInput.newCrust +
-            userInput.newTopping +
-            userInput.newFlavor) *
+            userInput.newTopping 
+           ) *
           userInput.newQuantity;
     
         
