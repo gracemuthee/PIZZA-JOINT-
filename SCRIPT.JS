@@ -18,3 +18,18 @@ $(document).ready(function() {
           var pizzaTopping = document.getElementById("topping").value;
           return parseInt(pizzaTopping);
         }
+
+        function number() {
+            var pizzaNumber = document.getElementById("quantity").value;
+            return parseInt(pizzaNumber);
+          }
+      
+          
+          function Order(flavor, size, crust, topping, quantity) {
+            this.newFlavor = flavor;
+            this.newSize = size;
+            this.newCrust = crust;
+            this.newTopping = topping;
+            this.newQuantity = quantity;
+          }
+      
